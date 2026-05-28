@@ -53,7 +53,7 @@ export interface ScheduledWorkout {
   completed: boolean;
 }
 
-const PRODUCTION_API_URL = 'https://fitness-progress-tracker-api.onrender.com';
+const PRODUCTION_API_URL = 'https://fitness-consistency-api.onrender.com';
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL ||
   (import.meta.env.PROD ? PRODUCTION_API_URL : 'http://127.0.0.1:8000');

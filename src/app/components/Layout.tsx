@@ -38,7 +38,7 @@ export function Layout() {
       {/* Mobile Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100">
         <div className="flex items-center justify-between p-4">
-          <h1 className="text-xl font-semibold text-gray-900">Fitness Progress Tracker</h1>
+          <h1 className="text-xl font-semibold text-gray-900">Fitness Consistency App</h1>
           <button 
             onClick={() => setMenuOpen(!menuOpen)}
             className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
