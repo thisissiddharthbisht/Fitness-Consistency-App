@@ -1,7 +1,7 @@
 
 # Fitness Consistency
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/USERNAME/REPO/main.yml?branch=main&label=build)](https://github.com/USERNAME/REPO/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/thisissiddharthbisht/fitness-progress/main.yml?branch=main&label=build)](https://github.com/thisissiddharthbisht/fitness-progress/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Tech Stack](https://img.shields.io/badge/stack-React%20%7C%20TypeScript%20%7C%20FastAPI%20%7C%20Supabase-blue)](https://github.com)
 
