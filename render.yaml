@@ -3,7 +3,7 @@
 
 services:
   - type: web
-    name: fitness-consistency-api
+    name: fitness-progress-tracker-api
     runtime: python
     plan: free
     rootDir: backend
