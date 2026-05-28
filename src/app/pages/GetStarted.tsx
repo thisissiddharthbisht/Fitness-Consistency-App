@@ -48,6 +48,7 @@ export default function GetStarted() {
       <div className="w-full max-w-md space-y-8">
         {/* Header */}
         <div className="text-center space-y-2">
+          <p className="text-sm font-medium text-blue-600">Fitness Progress Tracker</p>
           <h1 className="text-3xl font-semibold text-gray-900">Get Started</h1>
           <p className="text-gray-500">Create your personalized fitness plan</p>
         </div>

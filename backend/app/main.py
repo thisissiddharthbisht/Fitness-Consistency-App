@@ -23,7 +23,7 @@ from .schemas import (
 
 
 app = FastAPI(
-    title="Fitness Consistency API",
+    title="Fitness Progress Tracker API",
     description="Python backend for the React fitness app. It stores user data in Supabase.",
     version="1.0.0",
 )
