@@ -1,7 +1,6 @@
 
 # Fitness Consistency
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/thisissiddharthbisht/Fitness-Consistency-App/main.yml?branch=main&label=build)](https://github.com/thisissiddharthbisht/Fitness-Consistency-App/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Tech Stack](https://img.shields.io/badge/stack-React%20%7C%20TypeScript%20%7C%20FastAPI%20%7C%20Supabase-blue)](https://github.com)
 
