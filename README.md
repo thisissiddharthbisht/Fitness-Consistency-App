@@ -35,24 +35,41 @@ Fitness Consistency is implemented as a full-stack web application with the foll
 ### Directory Structure
 
 ```
-/                   # project root
-  README.md
-  package.json
-  tsconfig.json
-  vite.config.ts
-  src/              # React frontend source code
-    app/
-      components/
-      pages/
-      lib/
-      styles/
-  backend/          # Python FastAPI backend
-    app/
-      main.py
-      database.py
-      schemas.py
-    requirements.txt
-    supabase_schema.sql
+fitness-consistency-app/
+├── .gitignore                  # Tells Git to ignore node_modules, Python venv, and .env keys
+├── index.html                  # Main HTML entry point for the React app
+├── package.json                # Frontend packages (React, Vite, Radix UI, Tailwind)
+├── vite.config.ts              # Vite configuration for building/bundling the frontend
+├── src/                        # FRONTEND SOURCE
+│   ├── main.tsx                # Mounts the React application
+│   ├── styles/                 # Tailwind, fonts, and theme definitions
+│   └── app/
+│       ├── App.tsx             # Root component handling routes & layout wrappers
+│       ├── routes.ts           # Defines pages (Home, Dashboard, Progress, etc.)
+│       ├── lib/
+│       │   ├── storage.ts      # API client: calls Python backend instead of direct LocalStorage
+│       │   └── workoutData.ts  # Pre-defined workout templates and exercises
+│       ├── components/         # Reusable UI widgets (cards, buttons, calendars)
+│       └── pages/              # Screen components
+│           ├── GetStarted.tsx  # Onboarding screen (User Profile creation)
+│           ├── Dashboard.tsx   # Aggregated stats, streak visualization, achievements
+│           ├── Workouts.tsx    # List of available workouts
+│           ├── WorkoutScreen.tsx # Interactive workout tracker (timer, set checker)
+│           ├── WorkoutComplete.tsx # Summary of calorie burn and duration
+│           ├── Progress.tsx    # Logs history and analytics graphs
+│           └── Schedule.tsx    # Planner calendar (schedule future workouts)
+│
+└── backend/                    # BACKEND SOURCE
+    ├── .env                    # SECRETS: Stored locally only (NEVER committed to GitHub)
+    ├── .env.example            # Placeholder templates showing required env vars
+    ├── requirements.txt        # Python package list (fastapi, uvicorn, supabase)
+    ├── supabase_schema.sql     # SQL database schema to set up tables in Supabase
+    └── app/
+        ├── __init__.py
+        ├── config.py           # Loads env keys and restricts access
+        ├── database.py         # Connects to Supabase with the service_role key
+        ├── schemas.py          # Validates data shapes sent by React (Pydantic models)
+        └── main.py             # FastAPI App: routes profiles, logs, and stats
 ```
 
 ## Installation & Setup
